@@ -1,8 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(33, 34, 34);
+  color: white;
 }
 
-a {
-  color: #00B7FF;
+/* Header */
+
+.header {
+  border: solid white;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.header h1 {
+  font: 3rem "Josefin Sans", Helvetica, sans-serif;
+  margin: none;
+}
+.header p {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* Button for adding new message */
+
+.add-new-msg {
+  text-align: center;
+  margin: 15px;
+}
+
+.btn {
+  color: #FFF;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.add-btn {
+  padding: 18px 36px;
+}
+
+.add-msg-btn,
+.add-btn {
+  border-color: #02d891;
+  box-shadow: inset 0 0 0 0 #02d891;
+}
+
+.add-btn:hover,
+.add-msg-btn:hover {
+  color: black;
+  box-shadow: inset 400px 0 0 0 #02d891;
+}
+
+/* Messages */
+
+.message-list {
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;;
+  width: 60%;
+}
+
+.message-box {
+  margin: 15px 5px; 
+  border: solid white 0.5px; 
+  border-radius: 20px;
+  display: flex;
+}
+
+.message-box .username {
+  width: 20%;
+  margin: 10px 40px 10px 20px;
+  padding: 5px  0px;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.msg-info {
+  width: 60%;
+  text-align: left;
+}
+
+.msg-info p {
+  font-family: "Architects Daughter", Helvetica, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.msg-info span {
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* Form */
+
+.form-title {
+  text-align: center;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  background-color: black;
+  color: white;
+  border: solid white 2px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  margin: 15px;
+  font-size: 1.1rem;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+}
+
+.username-box,
+.text-box {
+  width: 40%;
+  margin: auto;
+}
+
+textarea {
+  height: 15vh;
+}
+
+.go-back-div {
+  text-align: center;
+}
+.add-msg-btn,
+.go-back {
+  padding: 12px 24px;
+}
+
+.go-back {
+  border-color: rgb(216, 2, 134);
+  box-shadow: inset 0 0 0 0 rgb(216, 2, 134);
+}
+
+.go-back:hover {
+  box-shadow: inset 400px 0 0 0 rgb(216, 2, 134);
 }
